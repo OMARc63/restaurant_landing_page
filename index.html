@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Restaurent</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header_bg">
+        <img class="img" src="./assets/header.png" alt="header image" />
+        <img
+          class="design"
+          src="./assets/header_design.png"
+          alt="header_design"
+        />
+      </div>
+
+      <div class="container">
+        <nav>
+          <a href="#" class="logo"
+            ><img src="./assets/logo.png" alt="logo"
+          /></a>
+          <ul class="links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#promo">Promo</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+            <img src="./assets/food_icon.png" alt="menu" class="menu" onclick="toggleMenu()" />
+            <img src="./assets/search.png" alt="search" class="search" />
+          </nav>
+          <div class="text">
+            <h1>Title Here</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+              repellat molestias dolorum soluta.
+            </p>
+            <button class="custom_button">Order Now</button>
+          </div>
+          
+        </div>
+      </div>
+    </header>
+    <!-- best seller -->
+    <section class="section_padding best_seller" id="product">
+      <div class="container">
+        <div class="head_section">
+          <h2 class="heading">Best Seller</h2>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos consectetur officiis rerum, voluptatem tenetur veritatis.</p>
+        </div>
+        <div class="content">
+          <div class="content_box">
+            <div class="box_img">
+              <img src='./assets/bs2.png' alt="bs2" />
+            </div>
+            <h4 class="box_head">Title Here</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+          <div class="content_box">
+            <div class="box_img">
+              <img src='./assets/bs3.png' alt="bs3" />
+            </div>
+            <h4 class="box_head">Title Here</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="content_box">
+            <div class="box_img">
+              <img src='./assets/bs1.png' alt="bs1" />
+            </div>
+            <h4 class="box_head">Title Here</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- oriental taste -->
+    <section class="section_padding oriental">
+      <div class="container wrapper">
+        <div class="wrapper_img"><img src="./assets/oriental.png" alt="oriental"></div>
+        <div class="wrapper_text">
+          <h2 class="heading">Oriental Taste</h2>
+          <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fuga quia perferendis, assumenda debitis natus tempore.</p>
+          <button class="custom_button">Order Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- statistics -->
+    <section class="section_padding stats">
+      <div class="container">
+        <div class="head_section gold">
+          <div class="head_section">
+            <h2 class="heading">Statistics</h2>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur elit. Neque quod cum facere labore aliquam provident numquam possimus. Dolorum, deleniti ut!</p>
+          </div>
+        </div>
+        <div class="stat_content">
+          <div class="stat_box">
+            <h4 class="num">123</h4>
+            <p class="title">Outlets</p>
+          </div>
+          <div class="stat_box">
+            <h4 class="num">100</h4>
+            <p class="title">Chef</p>
+          </div>
+          <div class="stat_box">
+            <h4 class="num">300</h4>
+            <p class="title">Menu</p>
+          </div>
+          <div class="stat_box">
+            <h4 class="num">30</h4>
+            <p class="title">Country</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chicken grill -->
+    <section class="section_padding chicken" id="promo">
+      <div class="container wrapper_reverse">
+        <div class="wrapper_img_reverse"><img src="./assets/chicken.png" alt="oriental"></div>
+        <div class="wrapper_text">
+          <h2 class="heading">Chicken Grill</h2>
+          <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fuga quia perferendis, assumenda debitis natus tempore.</p>
+          <button class="custom_button">Order Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- quote -->
+    <section class="quote" id="about">
+      <div class="overlay"></div>
+      <div class="container">
+        <p>Lorem ipsum dolor sit consectetur dolor sit consectetur adipisicing elit. Ducimus consectetur adipisicing nostrum nemo expedita odit unde atque!</p>
+        <h4 class="quote_auth">Lenora Fields</h4>
+      </div>
+    </section>
+
+    <!-- subscribe -->
+    <section class="section_padding sub" id="contact">
+      <div class="container">
+        <div class="head_section">
+          <h2 class="heading">Subscribe</h2>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur elit. Neque quod cum facere labore aliquam provident numquam possimus. Dolorum, deleniti ut!</p>
+        </div>
+        <form action="post">
+          <input type="email" name="email" id="email" placeholder="Your Email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="section_padding">
+      <div class="container">
+        <div class="about">
+          <h3 class="title">Title Here</h3>
+          <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo incidunt in vero dignissimos! Ipsum, maiores perspiciatis praesentium culpa tenetur mollitia.</p>
+          <div class="social">
+            <div class="social_icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="social_icon">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="social_icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="social_icon">
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+          </div>
+        </div>
+        <div class="links">
+          <div class="col">
+            <div class="title">About</div>
+            <ul>
+              <li>history</li>
+              <li>our team</li>
+              <li>brand guidelines</li>
+              <li>term & condition</li>
+              <li>privacy policy</li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="title">Services</div>
+            <ul>
+              <li>how to order</li>
+              <li>our product</li>
+              <li>order status</li>
+              <li>promo</li>
+              <li>payment method </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="title">Other</div>
+            <ul>
+              <li>contact us</li>
+              <li>help</li>
+              <li>privacy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.links').classList;
+        if(menu.contains("active")) {
+          menu.remove('active')
+        } else {
+          menu.add('active')
+        }
+      }
+    </script>
+    <script
+    src="https://kit.fontawesome.com/5daa8eb347.js"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
