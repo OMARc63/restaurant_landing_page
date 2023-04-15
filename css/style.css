@@ -238,11 +238,15 @@ nav {
   align-items: center;
 }
 nav .logo {
+  position: relative;
   flex: 1;
   padding-left: 1.5rem;
 }
 nav .logo img {
-  height: 50px;
+  background-color: #fff;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  height: 55px;
 }
 nav .links {
   display: flex;
@@ -250,6 +254,11 @@ nav .links {
 nav .links li {
   margin-right: 2.5rem;
   font-size: 18px;
+}
+@media screen and (max-width: 991px) {
+  nav .links li {
+    margin-right: 2rem;
+  }
 }
 nav .links a:hover {
   color: var(--color-golden);
